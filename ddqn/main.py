@@ -63,7 +63,7 @@ if __name__ == "__main__":
                        help="Path to .rou.xml file")
     
     # DDQN parameters
-    parser.add_argument("-lr", dest="learning_rate", type=float, default=0.0001,
+    parser.add_argument("-lr", dest="learning_rate", type=float, default=0.001,
                        help="Learning rate for DDQN")
     parser.add_argument("-gamma", dest="gamma", type=float, default=0.99,
                        help="Discount factor")
@@ -93,9 +93,9 @@ if __name__ == "__main__":
     # Simulation parameters
     parser.add_argument("-gui", action="store_true", default=False,
                        help="Run with SUMO GUI")
-    parser.add_argument("-episodes", dest="episodes", type=int, default=1000,
+    parser.add_argument("-episodes", dest="episodes", type=int, default=100,
                        help="Number of training episodes")
-    parser.add_argument("-max_steps", dest="max_steps", type=int, default=900,
+    parser.add_argument("-max_steps", dest="max_steps", type=int, default=3600,
                        help="Maximum steps per episode")
     parser.add_argument("-reward", dest="reward", type=str, default="diff-waiting-time",
                        help="Reward function")
