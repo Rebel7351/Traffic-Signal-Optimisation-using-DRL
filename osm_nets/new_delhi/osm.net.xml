@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-10-17 11:00:44 by Eclipse SUMO netedit Version 1.19.0
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
-    <input>
-        <route-files value="D:\mtech\projects\Thesis Work\4thSem\TrafficSignalOptimization\experiments\real_traffic\osm_nets\new_delhi\osm.rou.xml"/>
-        <sumo-net-file value="D:\mtech\projects\Thesis Work\4thSem\TrafficSignalOptimization\experiments\real_traffic\osm_nets\new_delhi\osm.net.xml"/>
-    </input>
-
-    <output>
-        <output-file value="D:\mtech\projects\Thesis Work\4thSem\TrafficSignalOptimization\experiments\real_traffic\osm_nets\new_delhi\osm.net.xml"/>
-    </output>
-
-    <processing>
-        <geometry.min-radius.fix.railways value="false"/>
-        <geometry.max-grade.fix value="false"/>
-        <offset.disable-normalization value="true"/>
-        <lefthand value="0"/>
-    </processing>
-
-    <junctions>
-        <no-turnarounds value="true"/>
-        <junctions.corner-detail value="5"/>
-        <junctions.limit-turn-speed value="5.50"/>
-        <rectangular-lane-cut value="0"/>
-    </junctions>
-
-    <pedestrian>
-        <walkingareas value="0"/>
-    </pedestrian>
-
-</configuration>
--->
 
 <net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
 
@@ -1597,3 +1566,4 @@
     <connection from=":9884398738_5" to="-1078118953" fromLane="0" toLane="0" dir="t" state="M"/>
 
 </net>
+
