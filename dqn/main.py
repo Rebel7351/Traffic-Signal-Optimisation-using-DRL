@@ -62,8 +62,8 @@ if __name__ == "__main__":
     parser.add_argument("-route", dest="route_file", type=str, default="osm.rou.xml",
                        help="Path to .rou.xml file")
     
-    # DDQN parameters
-    parser.add_argument("-lr", dest="learning_rate", type=float, default=0.0001,
+    # DQN parameters
+    parser.add_argument("-lr", dest="learning_rate", type=float, default=0.001,
                        help="Learning rate for DQN")
     parser.add_argument("-gamma", dest="gamma", type=float, default=0.99,
                        help="Discount factor")
@@ -71,7 +71,7 @@ if __name__ == "__main__":
                        help="Initial epsilon for exploration")
     parser.add_argument("-epsilon_min", dest="epsilon_min", type=float, default=0.01,
                        help="Minimum epsilon")
-    parser.add_argument("-epsilon_decay", dest="epsilon_decay", type=float, default=0.95,
+    parser.add_argument("-epsilon_decay", dest="epsilon_decay", type=float, default=0.995,
                        help="Epsilon decay rate")
     parser.add_argument("-buffer_size", dest="buffer_size", type=int, default=3600,
                        help="Experience replay buffer size")
@@ -93,9 +93,9 @@ if __name__ == "__main__":
     # Simulation parameters
     parser.add_argument("-gui", action="store_true", default=False,
                        help="Run with SUMO GUI")
-    parser.add_argument("-episodes", dest="episodes", type=int, default=1000,
+    parser.add_argument("-episodes", dest="episodes", type=int, default=100,
                        help="Number of training episodes")
-    parser.add_argument("-max_steps", dest="max_steps", type=int, default=900,
+    parser.add_argument("-max_steps", dest="max_steps", type=int, default=3600,
                        help="Maximum steps per episode")
     parser.add_argument("-reward", dest="reward", type=str, default="diff-waiting-time",
                        help="Reward function")
